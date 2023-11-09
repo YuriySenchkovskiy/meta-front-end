@@ -1,0 +1,61 @@
+/* Properties for other selectors */
+* {
+    padding: 0;
+    margin: 0;
+    color: pink;
+}
+
+.container {
+    min-height: 100vh;
+    background-color:bisque;
+}
+
+.letters {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-transform:uppercase;
+    font-size: 60px;
+}
+
+/* Add rules for the element 'p' present inside the class 'letters' using descendant selector */
+.letters p {
+    text-align: center;
+    background-color: rgb(250, 150, 100);
+    width: 70px;
+    margin-right: 1.5px;
+    border-radius: 15%;
+    border-color: rgb(250, 125, 75);
+    border-style: solid;
+}
+
+/* Add rules for steps 8 and 9
+Create new rules for the 'even' nth child of
+the 'p' element that follows the class 'letters'.
+Make use of the descendant selector such that,
+once you 'hover' over the class 'letters', for the
+'nth-child' of the 'p' element inside it, the rules
+below must be assigned:*/
+.letters:hover p:nth-child(even) {
+    transform: rotateY(720deg) skew(10deg);
+    transition: 0.5s;
+}
+
+/* Add rules for steps 10 and 11
+Hint: The rules for 'even' valued children of a given selector
+can be specified by using a syntax such as: selector:n-th-child(even)
+
+Similar to the rules above, you must now create rules for the
+'odd' nth-child of the 'p' element that follows the class 'letters'.
+
+Make use of the descendant selector such that, once you 'hover'
+over the class 'letters', for the odd 'nth-child' of the 'p' element
+inside it, the rules below must be assigned:
+
+Hint: The rules for 'odd' valued children of a given selector
+can be specified by using a syntax such as: selector:n-th-child(odd)*/
+.letters:hover p:nth-child(odd) {
+    transform: rotateX(720deg) skew(10deg);
+    transition: 1.5s;
+}

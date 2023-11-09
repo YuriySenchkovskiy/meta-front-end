@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <title>Little Lemon</title>
+
+    <meta property="og:title" content="Our Menu">
+    <meta property="og:type"  content="website">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url"   content="https://littlelemon/">
+    <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Little Lemon">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-$END$
+<header>
+    <img src="logo.png">
+</header>
+<main>
+    <form>
+        <div>
+            <label for="Username">Username</label>
+            <input type="text" id="username" name="user" required minlength="2"> <br>
+        </div>
+        <div>
+            <label for="Password">Password</label>
+            <input type="password" id="password" name="user_password" required minlength="2"><br>
+        </div>
+        <div>
+            <button type="submit">Log In</button>
+        </div>
+    </form>
+</main>
 </body>
+
 </html>
