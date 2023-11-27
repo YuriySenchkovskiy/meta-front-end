@@ -2,77 +2,119 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial scale=1">
-
-        <title>Little Lemon</title>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
         <meta name="description" content="The best restaurant in Chicago">
         <meta name="author" content="Little Lemon Restaurant">
+        <meta name="robots" content="all">
+        <meta name="googlebot-news" content="noindex">
 
-        <link rel="stylesheet" href="styles.css">
+        <meta property="og:title" content="Little Lemon Restaurant">
+        <meta property="og:type"  content="website">
+        <meta property="og:image" content="./img/logo.png">
+        <meta property="og:url"   content="https://littlelemon.com/">
+        <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:site_name" content="Little Lemon">
+
+        <link rel="stylesheet" href="./CSS/normalize.css">
+        <link rel="stylesheet" href="./CSS/styles.css">
+
+        <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+        <title>Little Lemon</title>
     </head>
 
     <body>
-        <header>
-            <img src="logo.png" class="logo" alt="Italian restaurant in Chicago">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a> </li>
-                    <li><a href="menu.html">Menu</a> </li>
-                    <li><a href="book.html">Book</a> </li>
-                    <li><a href="about.html">About</a> </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <article>
-                    <h1>Weekend Delight: 50% Off Selected Wines</h1>
-                    <p> Unwind and indulge in a delightful weekend treat at Little Lemon!
-                        Enjoy a splendid offer of 50% off on our selected range of exquisite wines, exclusively on
-                        Saturdays and Sundays.
-                        Savor the finest selection of wines from around the world while relishing the cozy ambiance of
-                        our restaurant.
-                        Whether you're a wine connoisseur or looking to explore new flavors, this weekend special is
-                        tailored just for you.
-                        Don't miss this opportunity to elevate your dining experience with our handpicked wines at half
-                        the price.
-                        Join us and raise a toast to memorable moments and incredible flavors at Little Lemon in the
-                        heart of Chicago!
-                        Hurry, the offer is valid for a limited time only. Reserve your table and treat yourself
-                        to a weekend of extraordinary tastes and savings.
-                        Cheers to great moments and fantastic wines at Little Lemon!</p>
-                </article>
-                <article>
-                    <h2>Season menu</h2>
-                    <p> Experience the freshest flavors of the season!
-                        Indulge in our new seasonal menu, crafted with locally sourced ingredients for a culinary
-                        journey you won't forget.
-                    </p>
-                </article>
-                <article>
-                    <h2>Branch time</h2>
-                    <p> Join us for a delightful Sunday brunch from 10 am to 3 pm.
-                        Indulge in a delectable spread of brunch favorites and refreshing beverages for the perfect
-                        start to your day.
-                    </p>
-                </article>
-                <article>
-                    <h2>Great chef</h2>
-                    <p> Exciting news!
-                        Our chef at Little Lemon is on the brink of receiving a prestigious Michelin star.
-                        With culinary expertise and innovation, expect an extraordinary dining experience that's soon
-                        to be recognized among the finest in the industry.
-                    </p>
-                </article>
-            </section>
-        </main>
-        <footer>
-            <div>
-                <img src="logo-footer.png" class="logo-footer" alt="The best restaurant in Chicago">
-            </div>
-            <div>
-                <p>Copyright Little Lemon</p>
-            </div>
-        </footer>
+        <h1 hidden>Little Lemon is a family-owned Mediterranean restaurant in Chicago.</h1>
+
+        <div class="container-site list-reset">
+            <header class="header">
+                <div class="logo">
+                    <img class="logo__image" src="./img/logo.png" alt="Italian restaurant in Chicago">
+                    <a class="logo__link" href="./index.html"></a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list-header flex list-reset">
+                        <li class="nav__list-element">
+                            <a class="nav__link" href="./index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav__list-element">
+                            <a class="nav__link" href="./index.html">
+                                Menu
+                            </a>
+                        </li>
+                        <li class="nav__list-element">
+                            <a class="nav__link" href="./index.html">
+                                Book
+                            </a>
+                        </li>
+                        <li class="nav__list-element">
+                            <a class="nav__link" href="./index.html">
+                                About
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="main">
+                <section class="main-offer section flex">
+                    <article class="main-offer__article">
+                        <h2 class="main-offer__header">50% Off Selected Wines
+                            <a class="main-offer__link" href="./index.html"></a>
+                        </h2>
+                        <p class="main-offer__text"> Unwind and indulge in a delightful weekend treat at Little Lemon!
+                            Enjoy a splendid offer of 50% off on our selected range of exquisite wines, exclusively on
+                            Saturdays and Sundays.
+                            Savor the finest selection of wines from around the world while relishing the cozy ambiance of
+                            our restaurant.</p>
+                    </article>
+                </section>
+                <section class="news section flex">
+                    <article class="news__article">
+                        <h3 class="news__article_header">Season menu</h3>
+                        <div class="news__image image-border">
+                            <img class="news__image" src="./img/season_menu.png" alt="New menu italian restaurant">
+                        </div>
+                        <p class="news__article_text"> Experience the freshest flavors of the season!
+                            Indulge in our new seasonal menu, crafted with locally sourced ingredients for a culinary
+                            journey you won't forget.
+                        </p>
+                    </article>
+                    <article class="news__article">
+                        <h3 class="news__article_header">Branch time</h3>
+                        <div class="news__image image-border">
+                            <img class="news__image" src="./img/brunch.png" alt="Branches every weekend">
+                        </div>
+                        <p class="news__article_text"> Join us for a delightful Sunday brunch from 10 am to 3 pm.
+                            Indulge in a delectable spread of brunch favorites and refreshing beverages for the perfect
+                            start to your day.
+                        </p>
+                    </article>
+                    <article class="news__article">
+                        <h3 class="news__article_header">Great chef</h3>
+                        <div class="news__image image-border">
+                            <img class="news__image" src="./img/chef.png" alt="Great Italian chef in Chicago">
+                        </div>
+                        <p class="news__article_text"> Exciting news!
+                            Our chef at Little Lemon is on the brink of receiving a prestigious Michelin star.
+                            With culinary expertise and innovation, expect an extraordinary dining experience that's soon
+                            to be recognized among the finest in the industry.
+                        </p>
+                    </article>
+                </section>
+            </main>
+
+            <footer class="footer flex">
+                <div class="footer__right-part">
+                    <img class="footer__logo" src="./img/favicon.png" alt="The best restaurant in Chicago">
+                </div>
+                <div class="footer__left-part">
+                    <div class="footer__line"></div>
+                    <p class="footer__copyright">Copyright Little Lemon</p>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
